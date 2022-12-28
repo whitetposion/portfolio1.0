@@ -39,7 +39,7 @@ body{
      padding: 10px 30px;
      margin:0 20px;
      line-height: 80px;
-     transition: .5s;
+     transition: .3s;
      font-size: 40px;
 }
 
@@ -51,7 +51,8 @@ body{
 
 .home-section.active, 
 .project-section.active, 
-.about-section.active{
+.about-section.active,
+.contact-section.active{
      position: relative;
      opacity: 1;
      z-index: 8; 
@@ -66,7 +67,7 @@ body{
      position:fixed;
      top: 0;
      opacity: 0;
-     transition: 1s;
+     transition: .5s;
 }
 
 .hero-heading{
@@ -94,7 +95,7 @@ body{
      padding: 150px 100px 100px;
      position:absolute;
      top: 0;
-     transition: 1s;
+     transition: .5s;
      opacity: 0;
 }
 
@@ -104,7 +105,7 @@ body{
      text-transform: capitalize;
      text-align: center;
      margin-bottom: 50px;
-     color: #1a1a1a;
+     color: #b4daf2;
      background-clip: text;
      -webkit-background-clip:text ;
      -webkit-text-stroke:8px transparent;
@@ -193,7 +194,7 @@ body{
      position: fixed;
      top: 0;
      opacity: 0;
-     transition: 1s;
+     transition: .5s;
 }
 
 .about{
@@ -438,6 +439,95 @@ body{
      font-size: 30px;
      font-weight: 300;
      margin-bottom: 20px;
+}
+/* contact section*/
+.contact-section{
+     position:fixed;
+     top:100px;
+     opacity: 0;
+     transition: .5s;
+     padding: 100px 150px;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap: 50px;
+}
+.contact-form input:hover, .contact-form textarea:hover{
+     border-color: rgb(85, 255, 87);
+     border-width: 4px;
+     transition: .3s;
+
+}
+
+.contact-form input, .contact-form textarea{
+     width: 100%;
+     height: 40px;
+     background: rgba(255,255,255,0.2);
+     border: 1px solid #fff;
+     margin-bottom: 30px;
+     border-radius: 5px;
+     text-transform: capitalize;
+     color: #fff;
+     padding: 5px 10px;
+}
+
+::placeholder{
+     color: #fff;
+}
+
+#msg{
+     height: 200px;
+     resize: none;
+     font-family: sans-serif;
+}
+
+.form-submit-btn{
+     background: #ff4f4f;
+     color: #fff;
+     text-transform: capitalize;
+     padding: 15px 40px;
+     display: block;
+     margin: auto;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.form-submit-btn:active{
+
+     background:#19d44e;
+}
+
+.map{
+     width: 100%;
+     height: 50%;
+     padding: 10px;
+     border: 2px solid #fff;
+     background: rgba(255,255,255,0.2);
+     border-radius: 10px;
+}
+
+.map iframe{
+     width: 100%;
+     height:100%;
+     border-radius: 5px;
+}
+
+.logo-container{
+     width:95%;
+     height:100%;
+     margin-top:1px;
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:100px;
+     color:#fff;
+     
+}
+
+.logo--{
+     width:auto;
+     height:100px;
+     margin: auto;   
 }
 
 
