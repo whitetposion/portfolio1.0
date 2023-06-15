@@ -2,6 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+
 }
 
 body{
@@ -171,12 +172,16 @@ body{
      cursor: pointer;
 }
 
-.project-btn.live {
+.project-btn.live  {
      background: none;
      border: 2px solid #fff;
 
 }
+.project-btn.live a {
+     text-decoration: none;
+     color: #fff;
 
+}
 .project-cards:hover .project-img{
      filter: blur(20px); 
 }
@@ -529,6 +534,7 @@ body{
      height:100px;
      margin: auto;   
 }
+
 
 
 
